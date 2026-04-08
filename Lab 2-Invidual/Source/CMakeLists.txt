@@ -16,7 +16,8 @@ file(COPY "./04.jpg" DESTINATION ${CMAKE_BINARY_DIR}/Debug)
 file(COPY "./05.jpg" DESTINATION ${CMAKE_BINARY_DIR}/Debug)
 
 
-find_package(OpenCV REQUIRED) 
+set(OpenCV_DIR "C:/opencv/build/x64/vc16/lib")
+find_package(OpenCV REQUIRED)
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 

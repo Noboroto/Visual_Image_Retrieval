@@ -5,6 +5,7 @@ set (CMAKE_CXX_STANDARD 20)
 
 file(GLOB SOURCES "src/*.cpp")
 
+set(OpenCV_DIR "C:/opencv/build/x64/vc16/lib")
 find_package(OpenCV REQUIRED) 
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
